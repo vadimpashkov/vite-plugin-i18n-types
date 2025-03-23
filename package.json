@@ -1,0 +1,75 @@
+{
+  "name": "vite-plugin-i18n-types",
+  "description": "Vite plugin to generate TypeScript types from localization JSON files (i18n).",
+  "version": "0.0.0",
+  "author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
+  "license": "MIT",
+  "homepage": "https://github.com/vadimpashkov/vite-plugin-i18n-types/tree/main/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimpashkov/vite-plugin-i18n-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vadimpashkov/vite-plugin-i18n-types/issues"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "vite-plugin",
+    "localization",
+    "i18n",
+    "typescript",
+    "types",
+    "json"
+  ],
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "eslint": "npx eslint --cache",
+    "prettier": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "peerDependencies": {
+    "vite": ">=4.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/node": "^22.13.11",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "ts-morph": "^25.0.1",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.0.9"
+  }
+}
