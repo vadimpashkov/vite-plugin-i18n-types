@@ -11,7 +11,7 @@ export default {
 	trailingComma: 'all',
 	overrides: [
 		{
-			files: ['*.json', '*.md'],
+			files: ['*.json', '*.md', '*.yml', '*.yaml'],
 			options: {
 				useTabs: false,
 				tabWidth: 2,
