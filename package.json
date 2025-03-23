@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-i18n-types",
   "description": "Vite plugin to generate TypeScript types from localization-like JSON files (e.g., i18n keys).",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
   "license": "MIT",
   "homepage": "https://github.com/vadimpashkov/vite-plugin-i18n-types/tree/main/#readme",
@@ -40,6 +40,7 @@
     "test": "vitest run",
     "lint": "npx eslint --cache",
     "prettier": "prettier --write .",
+    "release": "semantic-release",
     "prepare": "npx husky"
   },
   "lint-staged": {
@@ -65,6 +66,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3",
     "ts-morph": "^25.0.1",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.27.0",
