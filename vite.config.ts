@@ -24,9 +24,25 @@ export default defineConfig({
 		},
 		rollupOptions: {
 			external: ['vite', 'fs', 'path', 'child_process', 'chalk'],
+			output: {
+				globals: {
+					vite: 'vite',
+					fs: 'fs',
+					path: 'path',
+					child_process: 'child_process',
+					chalk: 'chalk',
+				},
+			},
 		},
 	},
-	plugins: [dts()],
+	plugins: [
+		dts({
+			entryRoot: 'src',
+			include: ['src'],
+			exclude: ['tests'],
+			rollupTypes: true,
+		}),
+	],
 	test: {
 		globals: true,
 		environment: 'node',
