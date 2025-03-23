@@ -38,7 +38,7 @@
   "scripts": {
     "build": "tsc && vite build",
     "test": "vitest run",
-    "eslint": "npx eslint --cache",
+    "lint": "npx eslint --cache",
     "prettier": "prettier --write .",
     "prepare": "npx husky"
   },
