@@ -40,7 +40,7 @@
     "test": "vitest run",
     "eslint": "npx eslint --cache",
     "prettier": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "npx husky"
   },
   "lint-staged": {
     "*.ts": [
