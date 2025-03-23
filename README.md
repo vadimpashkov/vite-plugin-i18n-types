@@ -63,7 +63,6 @@ export type LocalizationKeys = 'auth.login' | 'auth.password' | 'dashboard.stats
 Imagine you have this file:
 
 ```json
-// ./src/features/auth/locales/en.json
 {
   "auth": {
     "login": "Login",
