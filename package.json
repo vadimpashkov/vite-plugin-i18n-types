@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-i18n-types",
-  "description": "Vite plugin to generate TypeScript types from localization JSON files (i18n).",
+  "description": "Vite plugin to generate TypeScript types from localization-like JSON files (e.g., i18n keys).",
   "version": "0.0.0",
   "author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
   "license": "MIT",
